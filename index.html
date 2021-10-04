@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Encuesta Prevención COVID-19 2021</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+
+<body>
+
+    <div class="contenedor">
+        <header>
+            <div class="imagen">
+             <img src="img/logo.png" alt="VOCEM">
+            </div>
+        </header>
+            <!--                   Informacion Encuesta                           -->
+            
+            <div class="intro">
+                <h2>Encuesta Prevención COVID-19 2021</h2>
+                <p class="parrafo">Esta encuesta tiene por objetivo sondear información relacionada con la campaña de prevención de contagio 
+                    del Coronavirus Covid-19 en Vocem, así como recabar datos para construir y aplicar la logística necesaria 
+                    que permita fortalecer esta campaña preventiva y tomar medidas para hacer de la empresa un lugar seguro.
+                    <br><br>
+                    Agradecemos el tiempo que nos puedas dedicar para ayudarnos en esta tarea.
+                    <br><br>
+                    Te recordamos que esta encuesta es solo una herramienta para apoyar al cuidado de tu salud, en ningún 
+                    momento se debe tomar los planteamientos como un diagnóstico. <br><br>
+
+                    <span style="color: rgba( 249, 47, 47);">* Obligatorio</span>
+                </p>
+            </div>
+
+            <!--      ----------------------------------------------------------------------------------------------  -->
+
+
+                <!--                   Cedula                           -->
+
+        <form action="#" id="formulario">
+            <div class="float">
+            
+                <div class="main">
+                    <div class="cedula">
+                        <p class="parrafo">Coloca tu cédula de identidad. (Sin puntos ni letras) <span style="color: rgba( 249, 47, 47);">*</span>
+                            <br>
+                            Antes de continuar garantiza que el número de cédula de identidad coincide con tu documento legal.
+                        </p>
+                        
+                        <input type="text" class="estilo_cedula" name="cedula" id="cedula" placeholder="Tu respuesta">
+                        
+
+                        <div class="error" id="errorCedula">
+                            <p><i class="fas fa-exclamation-circle"></i>Esta pregunta es obligatoria</p>
+                        </div>
+                    </div>
+                </div>
+            
+
+            <!--                   Condiciones                           -->
+
+
+
+                <div class="main_left">
+                    <div class="label">
+                        <p class="parrafo">Por favor indícanos si eres: <span style="color: rgba( 249, 47, 47);">*</span></p>
+                            
+                            <div class="radio">
+                        
+                                <input type="radio" name="condicion" value="candidatoSeleccion" id="candidatoSeleccion">
+                                <label for="candidatoSeleccion">Candidato en proceso de Selección</label>
+                                <br><br>
+        
+                                <input type="radio" name="condicion" value="personalCurso" id="personalCurso">
+                                <label for="personalCurso">Personal en Curso-Campaña</label>
+                                <br><br>
+        
+                                <input type="radio" name="condicion" value="personalActivo" id="personalActivo">
+                                <label for="personalActivo">Personal Activo (personal contratado por Vocem)</label>
+                                <br><br>
+        
+                                <input type="radio" name="condicion" value="visitante" id="visitante">
+                                <label for="visitante">Visitante (Clientes / Proveedores)</label>
+                                
+                            </div>
+        
+                                
+        
+                                <div class="error" id="errorCondicion">
+                                    <p><i class="fas fa-exclamation-circle"></i>Esta pregunta es obligatoria</p>
+                                </div>
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <!--      ----------------------------------------------------------------------------------------------  -->
+
+
+
+            <!--                   Personal en Curso                          -->
+
+
+            <div class="float" id="Campaña">
+                <div class="main_justify">
+                    <div class="label">
+                        <div class="borde">
+                            <p class="blanco">Encuesta Prevención COVID-19 2020</p>
+                        </div>
+                        <p class="parrafo">¿Cuál es el nombre de la campaña en la que te estas formando?  <span style="color: rgba( 249, 47, 47);">*</span> <br>
+                        <span style="font-size: 12.5px">Cerciórate que estas colocando el nombre correcto de la campaña</span>
+                        </p>
+
+                            <div class="radio radio_margen">
+                        
+                                <input type="radio" name="campaña" value="mercadolibre" id="mercadolibre">
+                                <label for="mercadolibre">Mercado Libre</label>
+
+                                <select class="select" name="meli" id="meli">
+                                    <option value="MarketPlace">MarketPlace Global</option>
+                                    <option value="Prevencion">Prevención de Fraudes PF (BX)</option>
+                                    <option value="Prustomer">Prustomer</option>
+                                    <option value="Vendedores">Vendedores</option>
+                                    <option value="Compras">Compras y Mediaciones</option>
+                                    <option value="VIS">VIS (Clasificados)</option>
+                                </select>
+                                <br><br>
+
+                                <input type="radio" name="campaña" value="toyota" id="toyota">
+                                <label for="toyota">Toyota</label>
+                                <br><br>
+
+                                <input type="radio" name="campaña" value="tandem" id="tandem">
+                                <label for="tandem">Tandem Tech</label>
+                                <br><br>
+
+                                <input type="radio" name="campaña" value="linde" id="linde">
+                                <label for="linde">Linde Aga Gas</label>
+                                <br><br>
+
+                                <input type="radio" name="campaña" value="ubiiPagos" id="ubiiPagos">
+                                <label for="ubiiPagos">Ubii Pagos</label>
+
+                                <select class="selectt" name="ubii" id="ubii">
+                                    <option value="UbiiPagos">Ubii Pagos</option>
+                                    <option value="UbiiMarket">Ubii Market</option>
+                                    <option value="UbiiAPP">Ubii APP</option>
+                                </select>
+                                <br><br>
+
+
+                                <input type="radio" name="campaña" value="inter" id="inter">
+                                <label for="inter">Inter</label>
+                                <br><br>
+
+                            </div>
+
+                                <div class="error" id="errorCampaña">
+                                    <p><i class="fas fa-exclamation-circle"></i>Esta pregunta es obligatoria</p>
+                                </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--      ----------------------------------------------------------------------------------------------  -->
+
+
+            <!--                   Fecha                           -->
+
+
+            <div class="float">
+                <div class="main" id="Fecha">
+                    <div class="label">
+                            <p class="parrafo">Coloca la FECHA DE HOY (Día/Mes/Año) <span style="color: rgba( 249, 47, 47);">*</span>
+                                <br>
+
+                                Es importante que registres la fecha de hoy y corrobores que la información es correcta antes de avanzar.
+                                <br><br>
+
+                                <span style="color: rgba(0, 0, 0, 0.6)">Fecha</span>
+                            </p>
+                        
+                            <input type="date" class="estilo_fecha" name="fecha" id="fecha">
+
+                            <div class="error" id="errorFecha">
+                                <p><i class="fas fa-exclamation-circle"></i>Esta pregunta es obligatoria</p>
+                            </div>
+                    </div>
+                </div>
+
+
+
+            
+                <!--                   Sexo                           -->
+
+                <div class="main_left" id="Sexo">
+                    <div class="label">
+                        <p class="parrafo">Indica cuál es tu sexo <span style="color: rgba( 249, 47, 47);">*</span></p>
+
+                            <div class="radio radio_margen">
+                        
+                                <input type="radio" name="sexo" value="mujer" id="mujer">
+                                <label for="mujer">Femenino</label>
+                                <br><br>
+
+                                <input type="radio" name="sexo" value="hombre" id="hombre">
+                                <label for="hombre">Masculino</label>
+                            </div>
+
+                                <div class="error" id="errorSexo">
+                                    <p><i class="fas fa-exclamation-circle"></i>Esta pregunta es obligatoria</p>
+                                </div>
+                    
+                    </div>
+                </div>
+            </div>
+
+            <!--      ----------------------------------------------------------------------------------------------  -->
+
+
+            <!--                   Estado de Salud                           -->
+
+
+            <div class="float">
+                <div class="main_justify" id="Salud">
+                    <div class="label">
+                        <div class="borde">
+                            <p class="blanco">Estado de salud actual</p>
+                        </div>
+                        <p class="parrafo">A nivel general ¿Cómo describes tu estado de salud en este momento? <span style="color: rgba( 249, 47, 47);">*</span></p>
+
+                            <div class="radio">
+                        
+                                <input type="radio" name="salud" value="mujer" id="muybueno">
+                                <label for="muybueno">Muy Bueno</label>
+                        
+
+                                <input type="radio" name="salud" value="hombre" id="bueno">
+                                <label for="bueno">Bueno</label>
+                
+
+                                <input type="radio" name="salud" value="mujer" id="buenonmalo">
+                                <label for="buenonmalo">Ni Bueno / ni malo</label>
+
+
+                                <input type="radio" name="salud" value="hombre" id="malo">
+                                <label for="malo">Malo</label>
+ 
+
+                                <input type="radio" name="salud" value="hombre" id="muymalo">
+                                <label for="muymalo">Muy Malo</label>
+
+                            </div>
+
+                                <div class="error" id="errorSalud">
+                                    <p><i class="fas fa-exclamation-circle"></i>Esta pregunta es obligatoria</p>
+                                </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+            
+                <!--      ----------------------------------------------------------------------------------------------  -->
+
+            
+
+
+
+            <!--      ----------------------------------------------------------------------------------------------  -->
+
+
+
+            <!--                   Opciones de Estado Salud                           -->
+
+            <div class="float">
+                <div class="main" id="Medico">
+                    <div class="label">
+                
+                        <p class="parrafo">¿Te ha visto algún medico por este malestar que presentas? <span style="color: rgba( 249, 47, 47);">*</span></p>
+
+                            <div class="radio radio_margen">
+                        
+                                <input type="radio" name="malestar" value="malestarSi" id="malestarSi">
+                                <label for="malestarSi">Si</label>
+                                <br><br>
+
+                                <input type="radio" name="malestar" value="malestarNo" id="malestarNo">
+                                <label for="malestarNo">No</label>
+
+                            </div>
+
+                                <div class="error" id="errorMalestar">
+                                    <p><i class="fas fa-exclamation-circle"></i>Esta pregunta es obligatoria</p>
+                                </div>     
+                    </div>
+                </div>
+
+                <div class="main_left" id="Servicio">
+                    <div class="label">
+                        <p class="parrafo">¿Necesitas asistir a Servicio Médico? <span style="color: rgba( 249, 47, 47);">*</span></p>
+
+                            <div class="radio radio_margen">
+                        
+                                <input type="radio" name="servicio" value="servicioSi" id="servicioSi">
+                                <label for="servicioSi">Si</label>
+                                <br><br>
+
+                                <input type="radio" name="servicio" value="servicioNo" id="servicioNo">
+                                <label for="servicioNo">No</label>
+
+                            </div>
+
+                                <div class="error" id="errorServicio">
+                                    <p><i class="fas fa-exclamation-circle"></i>Esta pregunta es obligatoria</p>
+                                </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--      ----------------------------------------------------------------------------------------------  -->
+
+
+            <!--                   Sintomas                          -->
+            <div class="float">
+                <div class="main_justify" id="Sintomas">
+                    <div class="label">
+                        <div class="borde">
+                            <p class="blanco">Sintomas</p>
+                        </div>
+                        <p class="parrafo">¿Has presentado los siguientes síntomas en las últimas 24 horas? <span style="color: rgba( 249, 47, 47);">*</span></p>
+        
+                        
+                            <div class="table">
+                            
+                                <table>
+        
+                                    <tr>
+                                        <th style="background-color: #fff;"></th>
+                                        <th style="background-color: #fff;">Si</th>
+                                        <th style="background-color: #fff;">No</th>
+                                    <tr>
+        
+        
+                                    <tr>
+                                        <th>Dolor de Garganta o resequedad</th>
+                                        <th><input type="radio" name="garganta" id="gargantasi"><label for="gargantasi"></label></th>
+                                        <th><input type="radio" name="garganta" id="gargantano"><label for="gargantano"></label></th>
+                                    <tr>
+        
+                                    <tr id="fiebreOculto">
+                                        <th>Fiebre (temperatura igual o mayor a 38,5 ºC)</th>
+                                        <th><input type="radio" name="fiebre" id="fiebresi"><label for="fiebresi"></label></th>
+                                        <th><input type="radio" name="fiebre" id="fiebreno"><label for="fiebreno"></label></th>
+                                    <tr>
+        
+                                    <tr id="tosOculto">
+                                        <th>Tos Seca</th>
+                                        <th><input type="radio" name="tos" id="tossi"><label for="tossi"></label></th>
+                                        <th><input type="radio" name="tos" id="tosno"><label for="tosno"></label></th>
+                                    <tr>
+        
+                                    <tr id="respirarOculto">
+                                        <th>Dificultad para Respirar</th>
+                                        <th><input type="radio" name="respirar" id="respirarsi"><label for="respirarsi"></label></th>
+                                        <th><input type="radio" name="respirar" id="respirarno"><label for="respirarno"></label></th>
+                                    <tr>
+        
+                                    <tr id="muscularOculto">
+                                        <th>Dolor muscular generalizado</th>
+                                        <th><input type="radio" name="muscular" id="muscularsi"><label for="muscularsi"></label></th>
+                                        <th><input type="radio" name="muscular" id="muscularno"><label for="muscularno"></label></th>
+                                    <tr>
+                                    
+                                    <tr id="nalsalOculto">
+                                        <th>Congestión o secreción Nasal</th>
+                                        <th><input type="radio" name="nasal" id="nasalsi"><label for="nasalsi"></label></th>
+                                        <th><input type="radio" name="nasal" id="nasalno"><label for="nasalno"></label></th>
+                                    <tr>
+        
+                                    <tr id="diarreaOculto">
+                                        <th>Diarrea</th>
+                                        <th><input type="radio" name="diarrea" id="diarreasi"><label for="diarreasi"></label></th>
+                                        <th><input type="radio" name="diarrea" id="diarreano"><label for="diarreano"></label></th>
+                                    <tr>
+        
+                                    <tr id="cabezaOculto">
+                                        <th>Dolor de Cabeza</th>
+                                        <th><input type="radio" name="cabeza" id="cabezasi"><label for="cabezasi"></label></th>
+                                        <th><input type="radio" name="cabeza" id="cabezano"><label for="cabezano"></label></th>
+                                    <tr>
+        
+                                    <tr id="fatigaOculto">
+                                        <th>Fatiga generalizada sin causa aparente</th>
+                                        <th><input type="radio" name="fatiga" id="fatigasi"><label for="fatigasi"></label></th>
+                                        <th><input type="radio" name="fatiga" id="fatigano"><label for="fatigano"></label></th>
+                                    <tr>
+        
+                                    <tr id="gustoOculto">
+                                        <th>Pérdida del sentido del gusto</th>
+                                        <th><input type="radio" name="gusto" id="gustosi"><label for="gustosi"></label></th>
+                                        <th><input type="radio" name="gusto" id="gustono"><label for="gustono"></label></th>
+                                    <tr>
+        
+                                    <tr id="olfatoOculto">
+                                        <th>Pérdida del sentido del olfato</th>
+                                        <th><input type="radio" name="olfato" id="olfatosi"><label for="olfatosi"></label></th>
+                                        <th><input type="radio" name="olfato" id="olfatono"><label for="olfatono"></label></th>
+                                    <tr>
+        
+                                    <tr id="nauseasOculto">
+                                        <th>Náuseas</th>
+                                        <th><input type="radio" name="nauseas" id="nauseassi"><label for="nauseassi"></label></th>
+                                        <th><input type="radio" name="nauseas" id="nauseasno"><label for="nauseasno"></label></th>
+                                    <tr>
+                                        
+                                </table>
+        
+                    
+        
+                            </div>
+        
+                                <div class="error" id="errorSintomas">
+                                    <p><i class="fas fa-exclamation-circle"></i>En esta pregunta debes introducir una respuesta por fila</p>
+                                </div>    
+                    </div>
+                </div>
+            </div>
+                     <!--      ----------------------------------------------------------------------------------------------  -->
+
+
+
+            <!--                   Condiciones Medicas                           -->
+
+            <div class="float">
+
+                <div class="main" id="CondicionMedica">
+                    <div class="label">
+                        <div class="borde">
+                            <p class="blanco">Condiciones Médicas</p>
+                        </div>
+                        <p class="parrafo">¿Padeces o has padecido algunas de las siguientes condiciones médicas? <span style="color: rgba( 249, 47, 47);">*</span></p>
+
+                            <div class="check radio_margen">
+                        
+                                <input type="checkbox" name="condiciones" value="Diabetes" id="diabetes">
+                                <label for="diabetes">Diabetes</label>
+                                <br><br>
+        
+                                <input type="checkbox" name="condiciones" value="arterial" id="arterial">
+                                <label for="arterial">Hipertensión arterial</label>
+                                <br><br>
+        
+                                <input type="checkbox" name="condiciones" value="respiratoria" id="respiratoria">
+                                <label for="respiratoria">Enfermedad respiratoria</label>
+                                <br><br>
+        
+                                <input type="checkbox" name="condiciones" value="sistema" id="sistema">
+                                <label for="sistema">Sistema inmunodeprimido (sistema inmunológico que funciona por debajo del índice de normalidad).</label>
+                                <br><br>
+        
+                                <input type="checkbox" name="condiciones" value="renal" id="renal">
+                                <label for="renal">Enfermedad renal crónica</label>
+                                <br><br>
+        
+                                <input type="checkbox" name="condiciones" value="cardiaca" id="cardiaca">
+                                <label for="cardiaca">Enfermedad cardíaca</label>
+                                <br><br>
+        
+                                <input type="checkbox" name="condiciones" value="ninguna" id="ninguna">
+                                <label for="ninguna">Ninguna</label>
+                                <br><br>
+        
+                                <input type="checkbox" name="condiciones" value="otro" id="otro">
+                                <label for="otro">Otro</label>
+                                <input type="text" name="otro" class="otro">
+                                <br><br>
+                            
+                            </div>
+        
+                                <div class="error" id="errorMedica">
+                                    <p><i class="fas fa-exclamation-circle"></i>Esta pregunta es obligatoria</p>
+                                </div>
+                    </div>
+                </div>
+
+                <!--      ----------------------------------------------------------------------------------------------  -->
+
+                        <!--                   Contacto                           -->
+
+                <div class="main_left" id="Contacto">
+                    <div class="label">
+                        <div class="borde">
+                            <p class="blanco">Contacto</p>
+                        </div>
+                        <p class="parrafo">¿Conoces a alguien que haya sido diagnosticado con COVID-19? <span style="color: rgba( 249, 47, 47);">*</span></p>
+
+                            <div class="radio radio_margen">
+                        
+                                <input type="radio" name="contacto" value="contactosi" id="contactosi">
+                                <label for="contactosi">Si</label>
+                                <br><br>
+
+                                <input type="radio" name="contacto" value="contactono" id="contactono">
+                                <label for="contactono">No</label>      
+
+                            </div>
+
+                            <div class="error" id="errorContacto">
+                                <p><i class="fas fa-exclamation-circle"></i>Esta pregunta es obligatoria</p>
+                            </div>
+
+
+                            <div class="check radio_margen" id="Familiares">
+                                <p class="parrafo">Este contacto que ha sido diagnosticado con COVID-19 ¿qué relación tiene contigo? * <span style="color: rgba( 249, 47, 47);">*</span></p>
+
+
+                                <input type="checkbox" name="diagnostico" value="vive" id="vive">
+                                <label for="vive">Familiar que vive contigo</label>
+                                <br><br>
+        
+                                <input type="checkbox" name="diagnostico" value="novive" id="novive">
+                                <label for="novive">Familiar que no vive contigo</label>
+                                <br><br>
+        
+                                <input type="checkbox" name="diagnostico" value="dentro" id="dentro">
+                                <label for="dentro">Amigos y conocidos dentro tú urbanización</label>
+                                <br><br>
+        
+                                <input type="checkbox" name="diagnostico" value="fuera" id="fuera">
+                                <label for="fuera">Amigos y conocidos fuera de tu urbanización</label>
+                                <br><br>
+        
+                            </div>
+
+                                <div class="error" id="errorFamiliares">
+                                    <p><i class="fas fa-exclamation-circle"></i>Esta pregunta es obligatoria</p>
+                                </div>
+                        
+                    </div>
+
+
+                    <div class="label"  id="Contacto1">
+                        <p class="parrafo">¿En los últimos 15 días has estado en contacto físico directo, con alguna persona que presente o haya presentado 
+                                            alguno de los siguientes síntomas: Fiebre, Tos seca y Dificultad para respirar? <span style="color: rgba( 249, 47, 47);">*</span></p>
+        
+                        
+                            <div class="radio radio_margen">
+                            
+                                <input type="radio" name="sintomas" value="sinomasSi" id="sinomasSi">
+                                <label for="sinomasSi">Si</label>
+                                <br><br>
+        
+                                <input type="radio" name="sintomas" value="sintomasNo" id="sintomasNo">
+                                <label for="sintomasNo">No</label>
+        
+                            </div>
+        
+                                <div class="error" id="errorSintomasPersonas">
+                                    <p><i class="fas fa-exclamation-circle"></i>Esta pregunta es obligatoria</p>
+                                </div>
+
+                                <div class="check radio_margen" id="Familia">
+                                    <p class="parrafo">¿Este contacto ha sido con? * <span style="color: rgba( 249, 47, 47);">*</span></p>
+        
+        
+                                    <input type="checkbox" name="contactoFisico" value="vivesi" id="vivesi">
+                                    <label for="vivesi">Familiar que vive contigo</label>
+                                    <br><br>
+            
+                                    <input type="checkbox" name="contactoFisico" value="viveno" id="viveno">
+                                    <label for="viveno">Familiar que no vive contigo</label>
+                                    <br><br>
+            
+                                    <input type="checkbox" name="contactoFisico" value="amigodentro" id="amigodentro">
+                                    <label for="amigodentro">Amigos y conocidos dentro tú urbanización</label>
+                                    <br><br>
+            
+                                    <input type="checkbox" name="contactoFisico" value="amigofuera" id="amigofuera">
+                                    <label for="amigofuera">Amigos y conocidos fuera de tu urbanización</label>
+                                    <br><br>
+            
+                                </div>
+
+                                <div class="error" id="errorFamilia">
+                                    <p><i class="fas fa-exclamation-circle"></i>Esta pregunta es obligatoria</p>
+                                </div>
+                        
+                        <p class="parrafo">¿Has tenido un contacto físico directo, con alguna persona que haya sido 
+                                            diagnosticada con COVID-19 en los últimos 15 días? <span style="color: rgba( 249, 47, 47);">*</span></p>
+        
+                            <div class="radio radio_margen">
+                        
+                                <input type="radio" name="diagnostico" value="diagnosticoSi" id="diagnosticoSi">
+                                <label for="diagnosticoSi">Si</label>
+                                <br><br>
+        
+                                <input type="radio" name="diagnostico" value="diagnosticoNo" id="diagnosticoNo">
+                                <label for="diagnosticoNo">No</label>
+        
+                            </div>
+        
+                                <div class="error" id="errorDiagnostico">
+                                    <p><i class="fas fa-exclamation-circle"></i>Esta pregunta es obligatoria</p>
+                                </div>
+
+                            <div class="check radio_margen" id="Family">
+                                <p class="parrafo">¿Este contacto ha sido con? * <span style="color: rgba( 249, 47, 47);">*</span></p>
+
+
+                                <input type="checkbox" name="contactoDirecto" value="familiarvive" id="familiarvive">
+                                <label for="familiarvive">Familiar que vive contigo</label>
+                                <br><br>
+        
+                                <input type="checkbox" name="contactoDirecto" value="familiarnovive" id="familiarnovive">
+                                <label for="familiarnovive">Familiar que no vive contigo</label>
+                                <br><br>
+        
+                                <input type="checkbox" name="contactoDirecto" value="conocidodentro" id="conocidodentro">
+                                <label for="conocidodentro">Amigos y conocidos dentro tú urbanización</label>
+                                <br><br>
+        
+                                <input type="checkbox" name="contactoDirecto" value="conocidofuera" id="conocidofuera">
+                                <label for="conocidofuera">Amigos y conocidos fuera de tu urbanización</label>
+                                <br><br>
+        
+                            </div>
+
+                            <div class="error" id="errorFamily">
+                                <p><i class="fas fa-exclamation-circle"></i>Esta pregunta es obligatoria</p>
+                            </div>
+                    
+                    </div>
+
+
+                    <div class="label" id="Contacto2">
+                        <p class="parrafo">¿Tienes alguna persona que viva en tu casa, que haya viajado o regresado del exterior
+                                        (fuera del país) en los últimos 15 días? <span style="color: rgba( 249, 47, 47);">*</span></p>
+        
+            
+                            <div class="radio radio_margen">
+                        
+                                <input type="radio" name="viaje" value="viajeSi" id="viajeSi">
+                                <label for="viajeSi">Si</label>
+                                <br><br>
+        
+                                <input type="radio" name="viaje" value="viajeNo" id="viajeNo">
+                                <label for="viajeNo">No</label>      
+        
+                            </div>
+
+                            <div class="error" id="errorViaje">
+                                <p><i class="fas fa-exclamation-circle"></i>Esta pregunta es obligatoria</p>
+                            </div> 
+
+                            <div class="pais" id="Pais">
+                                <p class="parrafo">Indícanos a que país viajó o de que país regreso. <span style="color: rgba( 249, 47, 47);">*</span></p>
+                                
+                                <input type="text" class="estilo_pais" name="pais" id="pais" placeholder="Tu respuesta">
+                                
+                
+                                <div class="error" id="errorPais">
+                                    <p><i class="fas fa-exclamation-circle"></i>Esta pregunta es obligatoria</p>
+                                </div>
+                            </div>
+        
+                            
+                    </div>
+
+
+                    <div class="label" id="Contacto3">
+                        
+                        <p class="parrafo">¿Has estado en contacto físico directo con familiares, vecinos, amigos o conocidos 
+                                            que hayan viajado o regresado del exterior (fuera del país) en los últimos 15 días? <span style="color: rgba( 249, 47, 47);">*</span></p>
+        
+                            <div class="radio radio_margen">
+                        
+                                <input type="radio" name="exterior" value="exteriorSi" id="exteriorSi">
+                                <label for="exteriorSi">Si</label>
+                                <br><br>
+        
+                                <input type="radio" name="exterior" value="exteriorNo" id="exteriorNo">
+                                <label for="exteriorNo">No</label>      
+        
+                            </div>
+        
+                                <div class="error" id="errorExterior">
+                                    <p><i class="fas fa-exclamation-circle"></i>Esta pregunta es obligatoria</p>
+                                </div>
+
+
+                            <div class="pais" id="Country">
+                                <p class="parrafo">Indícanos a que país viajó o de que país regreso. <span style="color: rgba( 249, 47, 47);">*</span></p>
+                                
+                                <input type="text" class="estilo_pais" name="country" id="country" placeholder="Tu respuesta">
+                                
+                
+                                <div class="error" id="errorCountry">
+                                    <p><i class="fas fa-exclamation-circle"></i>Esta pregunta es obligatoria</p>
+                                </div>
+                            </div>
+                    
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <!--      ----------------------------------------------------------------------------------------------  -->
+            
+        
+
+                            <!--                   Encuesta Completada                           -->
+
+            <div class="float">
+                <div class="main_justify" id="Completado">
+                    <div class="label">
+                        <div class="borde">
+                            <p class="blanco">¿Has completado esta encuesta anteriormente en Vocem?</p>
+                        </div>
+                        <p class="parrafo">¿Has completado esta encuesta anteriormente en Vocem (días pasados)? <span style="color: rgba( 249, 47, 47);">*</span></p>
+
+                        
+                            <div class="radio radio_margen">
+                        
+                                <input type="radio" name="completado" value="completadoSi" id="completadoSi">
+                                <label for="completadoSi">Si</label>
+                                <br><br>
+
+                                <input type="radio" name="completado" value="completadoNo" id="completadoNo">
+                                <label for="completadoNo">No</label>      
+
+                            </div>
+
+                                <div class="error" id="errorCompletado">
+                                    <p><i class="fas fa-exclamation-circle"></i>Esta pregunta es obligatoria</p>
+                                </div>
+                        
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <!--      ----------------------------------------------------------------------------------------------  -->
+            
+        
+
+                            <!--                   Medios de Transporte                           -->
+
+            <div class="float">
+                <div class="main_justify" id="Transporte">
+                    <div class="label">
+                        <div class="borde">
+                            <p class="blanco">Medios de transporte</p>
+                        </div>
+                        <p class="parrafo">Indícanos el o los medios de transporte que utilizaste para trasladarte desde 
+                                        y hacia la empresa el día de hoy. <span style="color: rgba( 249, 47, 47);">*</span></p>
+        
+        
+                            <div class="check radio_margen">
+                        
+                                <input type="checkbox" name="transporte" value="caminando" id="caminando">
+                                <label for="caminando">Caminando</label>
+                                <br><br>
+        
+                                <input type="checkbox" name="transporte" value="personal" id="personal">
+                                <label for="personal">Trasporte Personal (propio o de familiar/amigo)</label>
+                                <br><br>
+        
+                                <input type="checkbox" name="transporte" value="privado" id="privado">
+                                <label for="privado">Trasporte Privado (Vocem)</label>
+                                <br><br>
+        
+                                <input type="checkbox" name="transporte" value="camionetas" id="camionetas">
+                                <label for="camionetas">Buses y/o Camionetas</label>
+                                <br><br>
+        
+                                <input type="checkbox" name="transporte" value="metro" id="metro">
+                                <label for="metro">Metro</label>
+                                <br><br>
+        
+                                <input type="checkbox" name="transporte" value="taxi" id="taxi">
+                                <label for="taxi">Taxi</label>
+                                <br><br>
+        
+                                <input type="checkbox" name="transporte" value="metroOtro" id="metroOtro">
+                                <label for="metroOtro">Metro + Otros</label>
+                                <br><br>
+        
+                                <input type="checkbox" name="transporte" value="otro" id="otro">
+                                <label for="otro">Otros sin Metro.</label>
+                                <br><br>
+        
+                                <input type="checkbox" name="transporte" value="home" id="home">
+                                <label for="home">Trabajo Home Office (trabajo desde casa)</label>
+                                            
+        
+                            </div>
+        
+                                <div class="error" id="errorTransporte">
+                                    <p><i class="fas fa-exclamation-circle"></i>Esta pregunta es obligatoria</p>
+                                </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!--      ----------------------------------------------------------------------------------------------  -->
+            
+        
+
+                            <!--                   Datos de Contacto                           -->
+
+
+            <div class="float" id="DatosContacto">
+                <div class="main_residencia">
+                    <div class="label">
+                        <div class="borde">
+                            <p class="blanco">Datos de contacto</p>
+                        </div>
+                        <p class="parrafo">Indica la zona donde resides. <span style="color: rgba( 249, 47, 47);">*</span></p>
+
+                    
+                            <div class="radio">
+                        
+                                <input type="radio" name="direccion" value="norte" id="norte">
+                                <label for="norte">Libertador Norte (San Bernandino, La Florida, Las Palmas, San Jose, Altagracia, La Pastora)</label>
+                                <br><br>
+
+                                <input type="radio" name="direccion" value="sur" id="sur">
+                                <label for="sur">Libertador Sur (Macarao, Caricuao, Coche, El Valle, La Vega)</label>
+                                <br><br>
+
+                                <input type="radio" name="direccion" value="oeste" id="oeste">
+                                <label for="oeste">Libertador Oeste (El Junquito, Antímano, Sucre)</label>
+                                <br><br>
+
+                                <input type="radio" name="direccion" value="este" id="este">
+                                <label for="este">Libertador Este (Chacaíto, Bello Monte, Santa Mónica, El Bosque, El Recreo)</label>
+                                <br><br>
+
+                                <input type="radio" name="direccion" value="centro" id="centro">
+                                <label for="centro">Libertador Centro (Candelaria, Catedral, Santa Teresa, San Agustín, San Juan,
+                                                    23 de Enero, Santa Rosalía)</label>
+                                <br><br>
+
+                                <input type="radio" name="direccion" value="chacao" id="chacao">
+                                <label for="chacao">Chacao</label>
+                                <br><br>
+
+                                <input type="radio" name="direccion" value="baruta" id="baruta">
+                                <label for="baruta">Baruta</label>
+                                <br><br>
+
+                                <input type="radio" name="direccion" value="sucre" id="sucre">
+                                <label for="sucre">Sucre</label>
+                                <br><br>
+
+                                <input type="radio" name="direccion" value="hatillo" id="hatillo">
+                                <label for="hatillo">El Hatillo</label>
+                                <br><br>
+
+                                <input type="radio" name="direccion" value="charallave" id="charallave">
+                                <label for="charallave">Charallave – Ocumare - Valles del Tuy</label>
+                                <br><br>
+
+                                <input type="radio" name="direccion" value="guarenas" id="guarenas">
+                                <label for="guarenas">Guarenas – Guatire</label>
+                                <br><br>
+
+                                <input type="radio" name="direccion" value="teques" id="teques">
+                                <label for="teques">San Antonio – Los Teques</label>
+                                <br><br>
+
+                                <input type="radio" name="direccion" value="vargas" id="vargas">
+                                <label for="vargas">Vargas</label>
+                                <br><br>
+
+                            </div>
+
+                                <div class="error" id="errorInformacion">
+                                    <p><i class="fas fa-exclamation-circle"></i>Esta pregunta es obligatoria</p>
+                                </div>
+                
+                    </div>
+                </div>
+
+
+                <div class="main_left">
+                    <div class="habitacion">
+                        <p class="parrafo">Por favor indícanos tu dirección de habitación completa <span style="color: rgba( 249, 47, 47);">*</span></p>
+                        
+                        <input type="text" class="estilo_habitacion" name="habitacion" id="habitacion" placeholder="Tu respuesta">
+                        <label class="linea"></label>
+        
+                        <div class="error" id="errorHabitacion">
+                            <p><i class="fas fa-exclamation-circle"></i>Esta pregunta es obligatoria</p>
+                        </div>
+                    </div>
+
+
+                    <div class="celular">
+                        <p class="parrafo">Por favor indícanos tu teléfono celular <span style="color: rgba( 249, 47, 47);">*</span></p>
+                        
+                        <input type="text" class="estilo_celular" name="celular" id="celular" placeholder="Tu respuesta">
+                        <label class="linea"></label>
+
+                        <div class="error" id="errorCelular">
+                            <p><i class="fas fa-exclamation-circle"></i>Esta pregunta es obligatoria</p>
+                        </div>
+                    </div>
+
+                    <div class="numero_contacto">
+                        <p class="parrafo">Por favor indícanos un número de contacto alterno <span style="color: rgba( 249, 47, 47);">*</span></p>
+                        
+                        <input type="text" class="estilo_conctacto" name="numeroContacto" id="numeroContacto" placeholder="Tu respuesta">
+                        <label class="linea"></label>
+
+                        <div class="error" id="errorNumero">
+                            <p><i class="fas fa-exclamation-circle"></i>Esta pregunta es obligatoria</p>
+                        </div>
+                    </div>
+
+                    <div class="correo">
+                            <p class="parrafo">Por favor indícanos tu correo electrónico personal <span style="color: rgba( 249, 47, 47);">*</span></p>
+                            
+                            <input type="email" class="estilo_correo" name="correo" id="correo" placeholder="Tu respuesta">
+                            <label class="linea"></label>
+
+                            <div class="error" id="errorCorreo">
+                                <p><i class="fas fa-exclamation-circle"></i>Esta pregunta es obligatoria</p>
+                            </div>
+                        </div>
+                </div>
+                
+            </div>
+
+            <!--      ----------------------------------------------------------------------------------------------  -->
+            
+        
+
+                            <!--                   Button                           -->
+        
+            <div class="button">
+                <button type="submit" id="btn" class="btn" >Enviar</button>
+            </div>
+
+        </form>
+
+
+        <!--      ----------------------------------------------------------------------------------------------  -->
+        
+    
+    
+    </div>
+
+
+        <!--      ----------------------------------------------------------------------------------------------  -->
+
+    <script src="js/main.js"></script>
+    <script src="js/efectos.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

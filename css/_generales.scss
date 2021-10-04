@@ -1,0 +1,22 @@
+* 
+{
+		margin: 0;
+		padding: 0;
+		-webkit-box-sizing: border-box;
+    	-moz-box-sizing: border-box;
+  		box-sizing: border-box;
+}
+
+
+body {
+	font-family: Arial, Sans-serif;
+	font-size: 14px;
+	background: #ECECEC;
+}
+
+.contenedor {
+	width: 70%;
+	max-width: 1600px;
+	margin: 10px auto;
+	overflow: hidden;
+}
